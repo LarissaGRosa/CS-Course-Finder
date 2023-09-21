@@ -1,0 +1,435 @@
+__________________________________________________ 
+Título: LINGUAGENS DE PROGRAMAÇÃO PARA CIÊNCIA DE DADOS
+Tempo para concluir: 7 h
+Como acessar: https://www.learncafe.com/cursos/linguagens-de-programacao-para-ciencia-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: Estatística e Análise de Dados para Ciências Sociais
+Tempo para concluir: 3 h
+Como acessar: https://www.learncafe.com/cursos/estatistica-e-analise-de-dados-para-ciencias-sociais
+__________________________________________________ 
+__________________________________________________ 
+Título: DATAOPS E IMPLANTAÇÃO DE SISTEMAS DE MACHINE LEARNING
+Tempo para concluir: 3 h
+Como acessar: https://www.learncafe.com/cursos/dataops-e-implantacao-de-sistemas-de-machine-learning
+__________________________________________________ 
+__________________________________________________ 
+Título: Pacote de programação
+Tempo para concluir: 260 h
+Como acessar: https://www.learncafe.com/cursos/pacote-de-programacao
+__________________________________________________ 
+__________________________________________________ 
+Título: Lógica de programação
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-logica-de-programacao
+__________________________________________________ 
+__________________________________________________ 
+Título: ALGORITMOS E PROGRAMAÇÃO
+Tempo para concluir: 60 h
+Como acessar: https://www.learncafe.com/cursos/algoritmos-e-programacao-483676
+__________________________________________________ 
+__________________________________________________ 
+Título: Programação Desktop
+Tempo para concluir: 150 h
+Como acessar: https://www.learncafe.com/cursos/programacao-desktop
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Lógica de Programação
+Tempo para concluir: 7 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-logica-de-programacao-4
+__________________________________________________ 
+__________________________________________________ 
+Título: Lógica de programação para iniciantes
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/logica-de-programacao-iniciantes
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso Lógica de Programação
+Tempo para concluir: 8 h
+Como acessar: https://www.learncafe.com/cursos/curso-logica-de-programacao-2
+__________________________________________________ 
+__________________________________________________ 
+Título: Algoritmos e lógica de programação + C#
+Tempo para concluir: 104 h
+Como acessar: https://www.learncafe.com/cursos/algoritmos-e-logica-de-programacao-c
+__________________________________________________ 
+__________________________________________________ 
+Título: Programação Neurolinguística e educação
+Tempo para concluir: 6 h
+Como acessar: https://www.learncafe.com/cursos/programacao-neurolinguistica-e-educacao-fmc
+__________________________________________________ 
+__________________________________________________ 
+Título: C++ Programação de Console
+Tempo para concluir: 25 h
+Como acessar: https://www.learncafe.com/cursos/c-programacao-de-console
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Introdução à Lógica de Programação
+Tempo para concluir: 10 h
+Como acessar: https://www.learncafe.com/cursos/introducao-logica-programacao-65201
+__________________________________________________ 
+__________________________________________________ 
+Título: Linguagem de Programação C#
+Tempo para concluir: 60 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-c-sharp-em-video-aulas
+__________________________________________________ 
+__________________________________________________ 
+Título: LÓGICA DE PROGRAMAÇÃO PARA INICIANTES
+Tempo para concluir: 5 h
+Como acessar: https://www.learncafe.com/cursos/logica-de-programacao-para-iniciantes
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Programação em Python
+Tempo para concluir: 5 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-programacao-em-python
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Lógica de Programação
+Tempo para concluir: 8 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-logica-de-programacao-2
+__________________________________________________ 
+__________________________________________________ 
+Título: Otimização e Programação Matemática
+Tempo para concluir: 3 h
+Como acessar: https://www.learncafe.com/cursos/otimizacao-e-programacao-matematica-
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Lógica de Programação
+Tempo para concluir: 6 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-logica-de-programacao-3
+__________________________________________________ 
+__________________________________________________ 
+Título: Manual de linguagens de programação e internet
+Tempo para concluir: 240 h
+Como acessar: https://www.learncafe.com/cursos/manual-de-linguagens-de-programacao-e-internet
+__________________________________________________ 
+__________________________________________________ 
+Título: PROGRAMAÇÃO ORIENTADA A OBJETOS
+Tempo para concluir: 3 h
+Como acessar: https://www.learncafe.com/cursos/-programacao-orientada-a-objetos
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de PNL - Programação Neurolinguística
+Tempo para concluir: 80 h
+Como acessar: https://www.learncafe.com/cursos/pnl-programacao-neurolinguistica-69102
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Introdução a Programação Neurolinguística
+Tempo para concluir: 10 h
+Como acessar: https://www.learncafe.com/cursos/introducao-programacao-neurolinguistica-71235
+__________________________________________________ 
+__________________________________________________ 
+Título: Desenvolvendo sistemas através da lógica de programação
+Tempo para concluir: 60 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-logica-de-programacao-ipd-1134
+__________________________________________________ 
+__________________________________________________ 
+Título: Lógica de Programação/CLP
+Tempo para concluir: 3 h
+Como acessar: https://www.learncafe.com/cursos/logica-de-programacaoclp
+__________________________________________________ 
+__________________________________________________ 
+Título: Linguagem de Programação C# Nível Básico
+Tempo para concluir: 10 h
+Como acessar: https://www.learncafe.com/cursos/linguagem-de-programacao-csharp-nivel-basico
+__________________________________________________ 
+__________________________________________________ 
+Título: Lógica de Programação em Portugol do Básico ao Avançado
+Tempo para concluir: 12 h
+Como acessar: https://www.learncafe.com/cursos/logica-de-programacao-com-portugol
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Serigrafia - Programação de Bordados
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-serigrafia---programacao-de-bordados
+__________________________________________________ 
+__________________________________________________ 
+Título: Introdução a Lógica de Programação em Portugol
+Tempo para concluir: 6 h
+Como acessar: https://www.learncafe.com/cursos/logica-de-programacao-em-portugol-basico
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Programação em C# (C Sharp)
+Tempo para concluir: 4 h
+Como acessar: https://www.learncafe.com/cursos/curso-deprogramacao-em-c-sharp
+__________________________________________________ 
+__________________________________________________ 
+Título: Web marketing
+Tempo para concluir: 6 h
+Como acessar: https://www.learncafe.com/cursos/web-marketing-ml
+__________________________________________________ 
+__________________________________________________ 
+Título: Programação WEB
+Tempo para concluir: 310 h
+Como acessar: https://www.learncafe.com/cursos/programacao-web
+__________________________________________________ 
+__________________________________________________ 
+Título: Java WEB - Aplicações Web com Java
+Tempo para concluir: 30 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-java-web
+__________________________________________________ 
+__________________________________________________ 
+Título: Webgis
+Tempo para concluir: 3 h
+Como acessar: https://www.learncafe.com/cursos/introducao-webgis
+__________________________________________________ 
+__________________________________________________ 
+Título: Java WEB
+Tempo para concluir: 3 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-java-web-2
+__________________________________________________ 
+__________________________________________________ 
+Título: Adeus, Weber
+Tempo para concluir: 6 h
+Como acessar: https://www.learncafe.com/cursos/adeus,-weber---com-gabriel-cohn-(legendas-em-ingles)
+__________________________________________________ 
+__________________________________________________ 
+Título: Sistema de Vendas Java WEB
+Tempo para concluir: 45 h
+Como acessar: https://www.learncafe.com/cursos/sistema-de-vendas-java-web
+__________________________________________________ 
+__________________________________________________ 
+Título: Atendimento Web e Redes Sociais
+Tempo para concluir: 60 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-atendimento-web-e-redes-sociais-ipd-50191
+__________________________________________________ 
+__________________________________________________ 
+Título: Django - Programação WEB com Python
+Tempo para concluir: 20 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-django
+__________________________________________________ 
+__________________________________________________ 
+Título: Sistema de Farmácia com Java WEB
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/sistema-de-farmacia-com-java-web
+__________________________________________________ 
+__________________________________________________ 
+Título: Aplicativo com WEB services android
+Tempo para concluir: 30 h
+Como acessar: https://www.learncafe.com/cursos/aplicativo-com-web-services-android
+__________________________________________________ 
+__________________________________________________ 
+Título: Como se tornar um redator web profissional
+Tempo para concluir: 4 h
+Como acessar: https://www.learncafe.com/cursos/como-se-tornar-um-redator-web-profissional
+__________________________________________________ 
+__________________________________________________ 
+Título: Photoshop CC para WEB
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-photoshop-cc-para-web
+__________________________________________________ 
+__________________________________________________ 
+Título: 100 Ferramentas Web 2.0
+Tempo para concluir: 8 h
+Como acessar: https://www.learncafe.com/cursos/100-ferramentas-web-20-fmc
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Princípios do Web Design: Layouts
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/principios-web-design-layouts-64048
+__________________________________________________ 
+__________________________________________________ 
+Título: Aplicativo Android Studio com WEB Service
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/aplicativo-android-studio-com-web-service
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Django - Programação WEB com Python
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-django---programacao-web-com-python
+__________________________________________________ 
+__________________________________________________ 
+Título: Acesso à internet e desenvolvimento de trabalhos na web
+Tempo para concluir: 192 h
+Como acessar: https://www.learncafe.com/cursos/acesso-a-internet-e-desenvolvimento-de-trabalhos-na-web
+__________________________________________________ 
+__________________________________________________ 
+Título: Android Studio com web services e API
+Tempo para concluir: 30 h
+Como acessar: https://www.learncafe.com/cursos/android-studio-com-web-services-e-api
+__________________________________________________ 
+__________________________________________________ 
+Título: Gerenciamento de Projeto com Web2Project
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/gerenciamento-de-projeto-com-web2project
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Princípios do Web Design: Cores
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/principios-web-design-cores-64051
+__________________________________________________ 
+__________________________________________________ 
+Título: GWT - Google Web Toolkit
+Tempo para concluir: 68 h
+Como acessar: https://www.learncafe.com/cursos/gwt
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Princípios do Web Design
+Tempo para concluir: 80 h
+Como acessar: https://www.learncafe.com/cursos/principios-do-web-design-50857
+__________________________________________________ 
+__________________________________________________ 
+Título: Sistema de Farmácia Java WEB
+Tempo para concluir: 40 h
+Como acessar: https://www.learncafe.com/cursos/sistema-de-farmacia-java-web
+__________________________________________________ 
+__________________________________________________ 
+Título: Gestão de Estoque com Java WEB
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/gestao-de-estoque-com-java-web
+__________________________________________________ 
+__________________________________________________ 
+Título: Web Design HTML, CSS e JavaScript
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/web-design--html,-css-e-javascript
+__________________________________________________ 
+__________________________________________________ 
+Título: Aplicativos com Web Services e API em Xamarin
+Tempo para concluir: 50 h
+Como acessar: https://www.learncafe.com/cursos/xamarin-com-web-services
+__________________________________________________ 
+__________________________________________________ 
+Título: Angular JS completo - Criação de sistemas WEB
+Tempo para concluir: 20 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-angular-js
+__________________________________________________ 
+__________________________________________________ 
+Título: TECNOLOGIAS DE BANCO DE DADOS
+Tempo para concluir: 9 h
+Como acessar: https://www.learncafe.com/cursos/tecnologias-de-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de dados MySQL
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-banco-de-dados-mysql
+__________________________________________________ 
+__________________________________________________ 
+Título: Mysql com Banco de Dados
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-mysql-com-banco-de-dados-2
+__________________________________________________ 
+__________________________________________________ 
+Título: Análise e modelagem de Banco de Dados + Banco de Dados O...
+Tempo para concluir: 212 h
+Como acessar: https://www.learncafe.com/cursos/analise-e-modelagem-de-banco-de-dados-e-banco-de-dados-oracle
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Banco de Dados MySQL
+Tempo para concluir: 8 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-banco-de-dados-mysql-2
+__________________________________________________ 
+__________________________________________________ 
+Título: Visual Basic com banco de dados
+Tempo para concluir: 30 h
+Como acessar: https://www.learncafe.com/cursos/visual-basic-com-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: Bancos de Dados Geográficos
+Tempo para concluir: 5 h
+Como acessar: https://www.learncafe.com/cursos/bancos-de-dados-geograficos-
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de Dados Oracle
+Tempo para concluir: 100 h
+Como acessar: https://www.learncafe.com/cursos/oracle
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de Dados MySQL
+Tempo para concluir: 8 h
+Como acessar: https://www.learncafe.com/cursos/banco-de-dados-mysql
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de Dados Relacionais e Não Relacionais
+Tempo para concluir: 4 h
+Como acessar: https://www.learncafe.com/cursos/banco-de-dados-relacionais-e-nao-relacionais
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de Dados - Análise e Modelagem
+Tempo para concluir: 112 h
+Como acessar: https://www.learncafe.com/cursos/curso-banco-de-dados-analise-e-modelagem
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de dados: Oracle e MYSQL
+Tempo para concluir: 144 h
+Como acessar: https://www.learncafe.com/cursos/banco-de-dados-oracle-e-mysql
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de Dados MySql com Android Studio
+Tempo para concluir: 20 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-android-com-mysql
+__________________________________________________ 
+__________________________________________________ 
+Título: TSQL - Banco de Dados SQL Server
+Tempo para concluir: 40 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-tsql
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de MySQL: Introdução ao Banco de Dados
+Tempo para concluir: 10 h
+Como acessar: https://www.learncafe.com/cursos/mysql-introducao-banco-dados-65773
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de Excel Avançado com Banco de Dados
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-excel-avancado-com-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: Banco de Dados e Jogos com Python - Avançado
+Tempo para concluir: 30 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-python-avancado
+__________________________________________________ 
+__________________________________________________ 
+Título: IONIC 3 - Banco de Dados Mysql e SQLite
+Tempo para concluir: 30 h
+Como acessar: https://www.learncafe.com/cursos/ionic3-com-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: Sistema Hoteleiro com Java - Banco de Dados Mysql WEB
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/sistema-hoteleiro-com-java---banco-de-dados-mysql-web
+__________________________________________________ 
+__________________________________________________ 
+Título: ASP.NET Core 2.0 - Banco de Dados SQL Server
+Tempo para concluir: 50 h
+Como acessar: https://www.learncafe.com/cursos/asp-net-core-com-sql
+__________________________________________________ 
+__________________________________________________ 
+Título: Curso de TSQL - Banco de Dados SQL Server
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-tsql---banco-de-dados-sql-server
+__________________________________________________ 
+__________________________________________________ 
+Título: Excel Avançado com Banco de Dados Access e SQL
+Tempo para concluir: 30 h
+Como acessar: https://www.learncafe.com/cursos/excel-com-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: Microsoft Access 2010 - Sistemas com banco de dados
+Tempo para concluir: 35 h
+Como acessar: https://www.learncafe.com/cursos/microsoft-access-2010-sistemas-com-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: Delphi 10 com Banco de Dados Mysql, SQL e Access
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/delphi-10-com-banco-de-dados-mysql,-sql-e-access
+__________________________________________________ 
+__________________________________________________ 
+Título: Mysql com Banco de Dados para a Criação de Sites e Sistemas
+Tempo para concluir: 25 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-mysql-com-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: PHP 7 e Mysqli - PHP com Banco de Dados
+Tempo para concluir: 20 h
+Como acessar: https://www.learncafe.com/cursos/php-7-e-mysqli
+__________________________________________________ 
+__________________________________________________ 
+Título: Loja Virtual - PHP e banco de dados avançado
+Tempo para concluir: 35 h
+Como acessar: https://www.learncafe.com/cursos/loja-virtual-php-e-banco-de-dados-avancado
+__________________________________________________ 
+__________________________________________________ 
+Título: Xamarin C# - Aplicativo Restaurante e Banco de Dados
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/xamarin-aplicativo-restaurante-e-banco-de-dados
+__________________________________________________ 
