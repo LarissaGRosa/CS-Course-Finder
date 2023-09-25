@@ -19,11 +19,15 @@ for i in tags:
     for c in courses:
         hours = c.find("span", class_="card-hours")
         title = c.find("h5", class_="card-title")
+        pricing = c.find("p", class_="card-price").find("b")
+        if pricing.find("span") is not None:
+            pricing.find("span").decompose()
 
         course = {
             "title": title.text,
             "hours": hours.text.replace("h", "").strip(),
             "link": c['href'],
+            "price": pricing.text.strip()
         }
 
         all_results.append(course)
