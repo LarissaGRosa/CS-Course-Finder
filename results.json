@@ -306,7 +306,7 @@
             ]
         },
         {
-            "title": "Informática Geral II: Fundamentos da Programação e Ban...",
+            "title": "Informática Geral II: Fundamentos da Programação e Banco de Dados",
             "hours": "30",
             "link": "https://www.learncafe.com/cursos/informatica-geral-ii-fundamentos-da-programacao-e-banco-de-dados-8086",
             "price": "R$ 92,40",
@@ -316,7 +316,7 @@
             ]
         },
         {
-            "title": "Curso de Desenvolvimento Web e Lógica de Programação -...",
+            "title": "Curso de Desenvolvimento Web e Lógica de Programação - Em construção",
             "hours": "8",
             "link": "https://www.learncafe.com/cursos/curso-de-logica-de-programacao-fundamentos-para-aprender-qualquer-linguagem-de-programacao",
             "price": "Gratuito",
@@ -336,7 +336,7 @@
             ]
         },
         {
-            "title": "Algoritmos e Lógica de Programação + JAVA Platform Ent...",
+            "title": "Algoritmos e Lógica de Programação + JAVA Platform Enterprise Edition",
             "hours": "124",
             "link": "https://www.learncafe.com/cursos/algoritmos-e-logica-de-programacao-java-platform-enterprise-edition",
             "price": "R$ 37,40",
@@ -366,7 +366,7 @@
             ]
         },
         {
-            "title": "Introdução à linguagem de programação com Small Basi...",
+            "title": "Introdução à linguagem de programação com Small Basic, HTML e Visual Basic",
             "hours": "25",
             "link": "https://www.learncafe.com/cursos/introducao-a-linguagem-de-programacao-small-basic-html-visual-basic",
             "price": "R$ 32,40",
@@ -406,7 +406,7 @@
             ]
         },
         {
-            "title": "Programação WEB - PHP7, Jquery, Bootstrap, Mysqli, Hosp...",
+            "title": "Programação WEB - PHP7, Jquery, Bootstrap, Mysqli, Hospedagem",
             "hours": "40",
             "link": "https://www.learncafe.com/cursos/programacao-web-php7-jquery-bootstrap-mysqli-hospedagem",
             "price": "R$ 22,40",
@@ -426,7 +426,7 @@
             ]
         },
         {
-            "title": "Programação WEB - PHP7, Jquery, Bootstrap, Mysqli, Hosp...",
+            "title": "Programação WEB - PHP7, Jquery, Bootstrap, Mysqli, Hospedagem",
             "hours": "2",
             "link": "https://www.learncafe.com/cursos/programacao-web---php7,-jquery,-bootstrap,-mysqli,-hospedagem",
             "price": "Gratuito",
@@ -508,7 +508,7 @@
             ]
         },
         {
-            "title": "Vivenciando a Programação da Produção por Simulação...",
+            "title": "Vivenciando a Programação da Produção por Simulação Computacional",
             "hours": "11",
             "link": "https://www.learncafe.com/cursos/vivenciando-a-programacao-da-producao-por-simulacao-computacional-",
             "price": "R$ 17,40",
@@ -988,7 +988,7 @@
             ]
         },
         {
-            "title": "Curso de Desenvolvimento de Games para Android - Básico:...",
+            "title": "Curso de Desenvolvimento de Games para Android - Básico: Personagens",
             "hours": "2",
             "link": "https://www.learncafe.com/cursos/desenvolvimento-games-android-basico-produzindo-animacao-personagens-64962",
             "price": "R$ 92,40",
@@ -1008,7 +1008,7 @@
             ]
         },
         {
-            "title": "Aprenda a criar um controle de estoque com Delphi I e Del...",
+            "title": "Aprenda a criar um controle de estoque com Delphi I e Delphi II Avançado",
             "hours": "100",
             "link": "https://www.learncafe.com/cursos/aprenda-a-criar-um-controle-de-estoque-com-delphi-i-e-delphi-ii-avancado",
             "price": "R$ 47,40",
@@ -1018,7 +1018,7 @@
             ]
         },
         {
-            "title": "PHP: Consultar, Inserir, Editar e Excluir utilizando a cl...",
+            "title": "PHP: Consultar, Inserir, Editar e Excluir utilizando a classe PDO",
             "hours": "6",
             "link": "https://www.learncafe.com/cursos/consultar-inserir-editar-e-excluir-utilizando-a-classe-pdo",
             "price": "Gratuito",
@@ -1154,7 +1154,7 @@
             ]
         },
         {
-            "title": "Sistema Pizzaria Java - Criando Sistemas com Java OO e ba...",
+            "title": "Sistema Pizzaria Java - Criando Sistemas com Java OO e banco de dados em nuvem",
             "hours": "40",
             "link": "https://www.learncafe.com/cursos/sistema-pizzaria-java",
             "price": "R$ 47,40",
@@ -1612,7 +1612,7 @@
             ]
         },
         {
-            "title": "Realidade Aumentada: Crie aplicações com Unity3D e Vufo...",
+            "title": "Realidade Aumentada: Crie aplicações com Unity3D e Vuforia SDK",
             "hours": "8",
             "link": "https://www.learncafe.com/cursos/realidade-aumentada-crie-aplicacoes-com-unity3d-e-vuforia-sdk",
             "price": "R$ 122,50",
@@ -1784,7 +1784,7 @@
             ]
         },
         {
-            "title": "Curso de Web Design Responsivo: Criando CSS do Topo, Menu...",
+            "title": "Curso de Web Design Responsivo: Criando CSS do Topo, Menu e Banner",
             "hours": "2",
             "link": "https://www.learncafe.com/cursos/web-design-responsivo-criado-css-topo-menu-banner-64914",
             "price": "R$ 92,40",
@@ -1824,7 +1824,7 @@
             ]
         },
         {
-            "title": "JAVA Platform Enterprise Edition + JAVA SE I + JAVA SE II...",
+            "title": "JAVA Platform Enterprise Edition + JAVA SE I + JAVA SE II + JAVA SE III",
             "hours": "204",
             "link": "https://www.learncafe.com/cursos/java-platform-enterprise-edition-java-se-i-java-se-ii-java-se-iii",
             "price": "R$ 57,40",
@@ -1864,7 +1864,7 @@
             ]
         },
         {
-            "title": "Curso Decolando com PWA e React | Criando App WEB e publi...",
+            "title": "Curso Decolando com PWA e React | Criando App WEB e publicando na Google Play",
             "hours": "6",
             "link": "https://www.learncafe.com/cursos/decolando-no-react-criando-app-web-e-publicando-na-google-play",
             "price": "R$ 130,47",
@@ -2404,7 +2404,7 @@
             ]
         },
         {
-            "title": "Aplicativo de Alunos - Xamarin - Android, IOS e Windows S...",
+            "title": "Aplicativo de Alunos - Xamarin - Android, IOS e Windows Server",
             "hours": "2",
             "link": "https://www.learncafe.com/cursos/aplicativo-de-alunos---xamarin---android,-ios-e-windows-server",
             "price": "Gratuito",
@@ -2946,7 +2946,7 @@
             ]
         },
         {
-            "title": "Sistema E-Commerce - Gerenciamento de Vendas em ASP.NET e...",
+            "title": "Sistema E-Commerce - Gerenciamento de Vendas em ASP.NET e MVC 5",
             "hours": "50",
             "link": "https://www.learncafe.com/cursos/sistema-e-commerce-gerenciamento-de-vendas",
             "price": "R$ 37,40",
@@ -3164,7 +3164,7 @@
             ]
         },
         {
-            "title": "Aplicativo de Clientes em Xamarin C# com Geolocalização...",
+            "title": "Aplicativo de Clientes em Xamarin C# com Geolocalização e Upload",
             "hours": "50",
             "link": "https://www.learncafe.com/cursos/aplicativo-de-clientes-geolocalizacao-e-uploads",
             "price": "R$ 22,40",
@@ -3700,7 +3700,7 @@
             ]
         },
         {
-            "title": "Análise e modelagem de Banco de Dados + Banco de Dados O...",
+            "title": "Análise e modelagem de Banco de Dados + Banco de Dados Oracle",
             "hours": "212",
             "link": "https://www.learncafe.com/cursos/analise-e-modelagem-de-banco-de-dados-e-banco-de-dados-oracle",
             "price": "R$ 67,40",
@@ -3830,7 +3830,7 @@
             ]
         },
         {
-            "title": "Criação de um site profissional com banco de dados em F...",
+            "title": "Criação de um site profissional com banco de dados em Flash CS5",
             "hours": "60",
             "link": "https://www.learncafe.com/cursos/criacao-de-um-site-profissional-com-banco-de-dados-em-flash-cs5",
             "price": "R$ 47,40",
@@ -4106,7 +4106,7 @@
             ]
         },
         {
-            "title": "Portal de Notícias em PHP7 e Mysqli - Mensagens e Coment...",
+            "title": "Portal de Notícias em PHP7 e Mysqli - Mensagens e Comentários (Módulo 4)",
             "hours": "40",
             "link": "https://www.learncafe.com/cursos/portal-de-noticias-php7-mysqli-mensagens-e-comentarios",
             "price": "R$ 37,40",
@@ -4362,7 +4362,7 @@
             ]
         },
         {
-            "title": "Delphi - Aprenda a criar um controle de estoque + Delphi...",
+            "title": "Delphi - Aprenda a criar um controle de estoque + Delphi II Avançado + Delphi 7 (Biometria)",
             "hours": "196",
             "link": "https://www.learncafe.com/cursos/delphi-aprenda-a-criar-um-controle-de-estoque-delphi-ii-avancado-delphi-7-biometria",
             "price": "R$ 57,40",
@@ -4492,7 +4492,7 @@
             ]
         },
         {
-            "title": "Portal de Notícias em PHP7 e Mysqli - Gestão de fóruns...",
+            "title": "Portal de Notícias em PHP7 e Mysqli - Gestão de fóruns (Módulo 2)",
             "hours": "40",
             "link": "https://www.learncafe.com/cursos/portal-de-noticias-php-mvc-e-mysqli-foruns",
             "price": "R$ 47,40",
@@ -4516,7 +4516,7 @@
             ]
         },
         {
-            "title": "Curso de Android com Delphi XE8 - Sistemas e Aplicativos...",
+            "title": "Curso de Android com Delphi XE8 - Sistemas e Aplicativos Mobile",
             "hours": "1",
             "link": "https://www.learncafe.com/cursos/curso-de-android-com-delphi-xe8---sistemas-e-aplicativos-mobile",
             "price": "Gratuito",
@@ -4790,7 +4790,7 @@
             ]
         },
         {
-            "title": "Portal de Notícias em PHP7 e Mysqli - Segurança e Login...",
+            "title": "Portal de Notícias em PHP7 e Mysqli - Segurança e Login (Módulo 1)",
             "hours": "40",
             "link": "https://www.learncafe.com/cursos/portal-de-noticias-php-7-mvc-e-mysqli-login",
             "price": "R$ 22,40",
@@ -4890,7 +4890,7 @@
             ]
         },
         {
-            "title": "Criando landing pages - Aprenda a estruturar uma página...",
+            "title": "Criando landing pages - Aprenda a estruturar uma página que converta",
             "hours": "2",
             "link": "https://www.learncafe.com/cursos/criando-landing-pages-aprenda-a-estruturar-uma-pagina-que-converta",
             "price": "R$ 17,50",
@@ -4970,7 +4970,7 @@
             ]
         },
         {
-            "title": "Portal de Notícias em PHP7 e Mysqli - Perfil de usuário...",
+            "title": "Portal de Notícias em PHP7 e Mysqli - Perfil de usuários (Módulo 3)",
             "hours": "40",
             "link": "https://www.learncafe.com/cursos/portal-de-noticias-php7-mvc-e-mysqli-usuarios",
             "price": "R$ 42,40",

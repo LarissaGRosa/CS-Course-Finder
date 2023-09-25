@@ -36,8 +36,16 @@ for i in tags:
             if pricing.find("span") is not None:
                 pricing.find("span").decompose()
 
+            # Pegar nome completo do curso caso esteja truncado
+            if title.text.endswith("..."):
+                course_page = requests.get(c['href'])
+                course_soup = BeautifulSoup(course_page.content, "html.parser")
+                course_title = course_soup.find("h1").text
+            else:
+                course_title = title.text
+
             course = {
-                "title": title.text,
+                "title": course_title,
                 "hours": hours.text.replace("h", "").strip(),
                 "link": c['href'],
                 "price": pricing.text.strip(),
@@ -50,10 +58,10 @@ for i in tags:
 
         pagination = soup.find("nav", attrs={"aria-label": "Paginação"})
         if pagination is not None:
-            nextPage = pagination.find("li", class_="page-next")
-            if nextPage is not None:
+            next_page = pagination.find("li", class_="page-next")
+            if next_page is not None:
                 URL = "https://www.learncafe.com/cursos" + \
-                    nextPage.find("a")['href']
+                    next_page.find("a")['href']
                 continue
         break
 
