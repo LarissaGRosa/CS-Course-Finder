@@ -3,71 +3,151 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-print("Processando...")
-all_results = []
 
-# Learn Café
-tags = ["data+science", "programacao", "web",
-        "banco+de+dados", "machine+learning"]
-accepted_categories = ["Informática e internet", "Tecnologia da Informação"]
+def get_courses_from_learncafe(search_tags, accepted_categories):
+    all_results = []
+    unique_courses = set()
 
-unique_courses = set()
-for i in tags:
-    URL = "https://www.learncafe.com/cursos?filter=all&q="+i
+    for tag in search_tags:
+        url = f"https://www.learncafe.com/cursos?filter=all&q={tag}"
+        while True:
+            page = requests.get(url)
+            soup = BeautifulSoup(page.content, "html.parser")
+            results = soup.find(id="cursosLista")
+            courses = results.find_all("a", class_="card")
 
-    while True:
-        page = requests.get(URL)
-        soup = BeautifulSoup(page.content, "html.parser")
+            for course in courses:
+                category = course.find("span", class_="card-category")
+                category_list = [c.text for c in category.find_all("span")]
 
-        results = soup.find(id="cursosLista")
-        courses = results.find_all("a", class_="card")
+                if not any(x in category_list for x in accepted_categories):
+                    continue
 
-        for c in courses:
-            category = c.find("span", class_="card-category")
-            category_list = [c.text for c in category.find_all("span")]
+                hours = course.find("span", class_="card-hours")
+                title = course.find("h5", class_="card-title")
 
-            if not any(x in category_list for x in accepted_categories):
-                continue
+                pricing = course.find("p", class_="card-price").find("b")
+                if pricing.find("span"):
+                    pricing.find("span").decompose()
 
-            hours = c.find("span", class_="card-hours")
-            title = c.find("h5", class_="card-title")
+                if title.text.endswith("..."):
+                    course_page = requests.get(course['href'])
+                    course_soup = BeautifulSoup(
+                        course_page.content, "html.parser")
+                    course_title = course_soup.find("h1").text
+                else:
+                    course_title = title.text
 
-            pricing = c.find("p", class_="card-price").find("b")
-            if pricing.find("span") is not None:
-                pricing.find("span").decompose()
+                course_dict = {
+                    "title": course_title,
+                    "period": hours.text.strip(),
+                    "link": course['href'],
+                    "price": pricing.text.strip(),
+                    "category": tuple(category_list)
+                }
 
-            # Pegar nome completo do curso caso esteja truncado
-            if title.text.endswith("..."):
-                course_page = requests.get(c['href'])
-                course_soup = BeautifulSoup(course_page.content, "html.parser")
-                course_title = course_soup.find("h1").text
-            else:
-                course_title = title.text
+                if tuple(course_dict.values()) not in unique_courses:
+                    unique_courses.add(tuple(course_dict.values()))
+                    all_results.append(course_dict)
 
-            course = {
-                "title": course_title,
-                "hours": hours.text.replace("h", "").strip(),
-                "link": c['href'],
-                "price": pricing.text.strip(),
-                "category": tuple(category_list)
-            }
+            pagination = soup.find("nav", attrs={"aria-label": "Paginação"})
+            if pagination:
+                next_page = pagination.find("li", class_="page-next")
+                if next_page:
+                    url = "https://www.learncafe.com/cursos" + \
+                        next_page.find("a")['href']
+                    continue
+            break
+    print("Cursos do LearnCafe buscados.")
+    return all_results
 
-            if tuple(course.values()) not in unique_courses:
-                unique_courses.add(tuple(course.values()))
-                all_results.append(course)
 
-        pagination = soup.find("nav", attrs={"aria-label": "Paginação"})
-        if pagination is not None:
-            next_page = pagination.find("li", class_="page-next")
-            if next_page is not None:
-                URL = "https://www.learncafe.com/cursos" + \
-                    next_page.find("a")['href']
-                continue
-        break
+def get_courses_from_harvard(search_tags):
+    all_results = []
+    unique_courses = set()
 
-result_dict = {"length": len(all_results), "courses": all_results}
+    for tag in search_tags:
+        url = f'https://pll.harvard.edu/catalog?keywords={tag}'
+        while True:
+            page = requests.get(url)
+            soup = BeautifulSoup(page.content, "html.parser")
+            courses = soup.find_all("article")
 
-with open("results.json", "w", encoding='utf-8') as f:
-    json.dump(result_dict, f, indent=4, ensure_ascii=False)
+            for course in courses:
+                details = course.find(
+                    "div", class_="group-details-inner")
+                period = details.find(
+                    "div", class_="field field---extra-field-pll-extra-field-duration field--name-extra-field-pll-extra-field-duration field--type- field--label-visually_hidden")
+                if period:
+                    course_period = period.find(
+                        "div", class_="field__item").text
+                else:
+                    # Vou ignorar cursos que não tem período estrito de tempo (quase sempre ainda não disponíveis)
+                    continue
+                category_tag = course.find(
+                    "div", class_="field field---extra-field-pll-extra-field-subject field--name-extra-field-pll-extra-field-subject field--type- field--label-inline clearfix")
+                if category_tag:
+                    category = category_tag.text.strip()  # Pode não ter, avaliar
+                else:
+                    # Vou ignorar cursos que não tem categoria
+                    continue
 
-print("Processo finalizado.")
+                price = details.find(
+                    "div", class_="field field---extra-field-pll-extra-field-price field--name-extra-field-pll-extra-field-price field--type- field--label-visually_hidden").find("div", class_="field__item").text
+                course_title = course.find("h3")
+
+                course_dict = {
+                    "title": course_title.text.strip(),
+                    "period": course_period,
+                    "link": f"https://pll.harvard.edu{course_title.find('a')['href']}",
+                    "price": price,
+                    "category": tuple([category])
+                }
+
+                if tuple(course_dict.values()) not in unique_courses:
+                    unique_courses.add(tuple(course_dict.values()))
+                    all_results.append(course_dict)
+
+            pagination = soup.find("nav", attrs={"role": "navigation"})
+            if pagination:
+                next_page = pagination.find(
+                    "li", class_="pager__item pager__item--next pagination-next")
+                if next_page:
+                    url = "https://pll.harvard.edu/catalog" + \
+                        next_page.find("a")['href']
+                    continue
+            break
+    print("Cursos da Harvard buscados.")
+    return all_results
+
+
+def save_results(all_results):
+    result_dict = {"length": len(all_results), "courses": all_results}
+
+    with open("results.json", "w", encoding='utf-8') as f:
+        json.dump(result_dict, f, indent=4, ensure_ascii=False)
+
+
+def main():
+    print("Processando...")
+
+    search_tags = ["data+science", "programacao", "web",
+                   "banco+de+dados", "machine+learning"]
+    accepted_categories = {
+        "Informática e internet", "Tecnologia da Informação"}
+    learncafe = get_courses_from_learncafe(search_tags, accepted_categories)
+
+    search_tags = ["data+science", "programming", "web",
+                   "database", "machine+learning"]
+    # TODO: AVALIAR: accepted categories? Ver se dados da Harvard fazem sentido
+    harvard = get_courses_from_harvard(search_tags)
+
+    all_courses = learncafe + harvard
+
+    save_results(all_courses)
+
+    print("Processo finalizado.")
+
+
+if __name__ == "__main__":
+    main()
