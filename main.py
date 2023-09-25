@@ -25,8 +25,8 @@ def get_courses_from_learncafe(search_tags, accepted_categories):
 
                 hours = course.find("span", class_="card-hours")
                 title = course.find("h5", class_="card-title")
-
                 pricing = course.find("p", class_="card-price").find("b")
+
                 if pricing.find("span"):
                     pricing.find("span").decompose()
 
@@ -62,7 +62,7 @@ def get_courses_from_learncafe(search_tags, accepted_categories):
     return all_results
 
 
-def get_courses_from_harvard(search_tags):
+def get_courses_from_harvard(search_tags, accepted_categories):
     all_results = []
     unique_courses = set()
 
@@ -76,32 +76,45 @@ def get_courses_from_harvard(search_tags):
             for course in courses:
                 details = course.find(
                     "div", class_="group-details-inner")
+                category_tag = course.find(
+                    "div", class_="field field---extra-field-pll-extra-field-subject field--name-extra-field-pll-extra-field-subject field--type- field--label-inline clearfix")
+
+                if category_tag and category_tag.text.strip() in accepted_categories:
+                    category = category_tag.text.strip()  # Pode não ter, avaliar
+                else:
+                    continue
+
                 period = details.find(
                     "div", class_="field field---extra-field-pll-extra-field-duration field--name-extra-field-pll-extra-field-duration field--type- field--label-visually_hidden")
+
                 if period:
                     course_period = period.find(
                         "div", class_="field__item").text
                 else:
                     # Vou ignorar cursos que não tem período estrito de tempo (quase sempre ainda não disponíveis)
                     continue
-                category_tag = course.find(
-                    "div", class_="field field---extra-field-pll-extra-field-subject field--name-extra-field-pll-extra-field-subject field--type- field--label-inline clearfix")
-                if category_tag:
-                    category = category_tag.text.strip()  # Pode não ter, avaliar
-                else:
-                    # Vou ignorar cursos que não tem categoria
-                    continue
 
                 price = details.find(
                     "div", class_="field field---extra-field-pll-extra-field-price field--name-extra-field-pll-extra-field-price field--type- field--label-visually_hidden").find("div", class_="field__item").text
                 course_title = course.find("h3")
+                course_link = f"https://pll.harvard.edu{course_title.find('a')['href']}"
+
+                course_request = requests.get(course_link)
+                course_soup = BeautifulSoup(
+                    course_request.content, "html.parser")
+                course_details = course_soup.find(
+                    "div", class_="group-details cell").find("div", class_="group-details-inner").find(
+                        "div", class_="field field--name-field-topics field--type-entity-reference field--label-inline").find(
+                            "div", class_="display-inline field__items").find_all("div", class_="topic-tag field__item")
+                topics = [topic.text.strip() for topic in course_details]
+                category = set([category] + topics)
 
                 course_dict = {
                     "title": course_title.text.strip(),
                     "period": course_period,
-                    "link": f"https://pll.harvard.edu{course_title.find('a')['href']}",
+                    "link": course_link,
                     "price": price,
-                    "category": tuple([category])
+                    "category": tuple(category)
                 }
 
                 if tuple(course_dict.values()) not in unique_courses:
@@ -139,8 +152,9 @@ def main():
 
     search_tags = ["data+science", "programming", "web",
                    "database", "machine+learning"]
-    # TODO: AVALIAR: accepted categories? Ver se dados da Harvard fazem sentido
-    harvard = get_courses_from_harvard(search_tags)
+    accepted_categories = {"Programming", "Data Science",
+                           "Computer Science", "Machine Learning"}
+    harvard = get_courses_from_harvard(search_tags, accepted_categories)
 
     all_courses = learncafe + harvard
 

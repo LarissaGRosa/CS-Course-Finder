@@ -1,5 +1,5 @@
 {
-    "length": 651,
+    "length": 519,
     "courses": [
         {
             "title": "DATAOPS E IMPLANTAÇÃO DE SISTEMAS DE MACHINE LEARNING",
@@ -5029,7 +5029,17 @@
             "link": "https://pll.harvard.edu/course/cs50-introduction-computer-science",
             "price": "Free*",
             "category": [
-                "Programming"
+                "SQL",
+                "Python",
+                "JavaScript",
+                "C",
+                "CSS",
+                "Data Structures",
+                "Web Development",
+                "HTML",
+                "Programming",
+                "Algorithms",
+                "Computer Science"
             ]
         },
         {
@@ -5038,6 +5048,11 @@
             "link": "https://pll.harvard.edu/course/cs50s-introduction-programming-scratch",
             "price": "Free*",
             "category": [
+                "Databases",
+                "Data Structures",
+                "Web Development",
+                "Programming",
+                "Algorithms",
                 "Computer Science"
             ]
         },
@@ -5047,7 +5062,11 @@
             "link": "https://pll.harvard.edu/course/data-analysis-life-sciences-2-introduction-linear-models-and-matrix-algebra",
             "price": "Free*",
             "category": [
-                "Data Science"
+                "R",
+                "Statistics",
+                "Biology",
+                "Data Science",
+                "Data Analysis"
             ]
         },
         {
@@ -5056,6 +5075,9 @@
             "link": "https://pll.harvard.edu/course/statistics-and-r",
             "price": "Free*",
             "category": [
+                "R",
+                "Data Analysis",
+                "Biology",
                 "Data Science"
             ]
         },
@@ -5065,7 +5087,12 @@
             "link": "https://pll.harvard.edu/course/data-analysis-life-sciences-3-statistical-inference-and-modeling-high-throughput-experiments",
             "price": "Free*",
             "category": [
-                "Data Science"
+                "R",
+                "Statistics",
+                "Bioinformatics",
+                "Data Science",
+                "Data Analysis",
+                "Biostatistics"
             ]
         },
         {
@@ -5074,7 +5101,12 @@
             "link": "https://pll.harvard.edu/course/data-analysis-life-sciences-4-high-dimensional-data-analysis",
             "price": "Free*",
             "category": [
-                "Data Science"
+                "R",
+                "Statistics",
+                "Data Visualization",
+                "Data Science",
+                "Data Analysis",
+                "Biostatistics"
             ]
         },
         {
@@ -5083,7 +5115,12 @@
             "link": "https://pll.harvard.edu/course/data-analysis-life-sciences-5-introduction-bioconductor-annotation-and-analysis-genomes-and",
             "price": "Free*",
             "category": [
-                "Data Science"
+                "R",
+                "Statistics",
+                "Biology",
+                "Data Science",
+                "Data Analysis",
+                "Biostatistics"
             ]
         },
         {
@@ -5092,7 +5129,12 @@
             "link": "https://pll.harvard.edu/course/data-analysis-life-sciences-6-high-performance-computing-reproducible-genomics",
             "price": "Free*",
             "category": [
-                "Data Science"
+                "R",
+                "Statistics",
+                "Biology",
+                "Data Visualization",
+                "Data Science",
+                "Data Analysis"
             ]
         },
         {
@@ -5101,34 +5143,12 @@
             "link": "https://pll.harvard.edu/course/data-analysis-life-sciences-7-case-studies-functional-genomics",
             "price": "Free*",
             "category": [
-                "Data Science"
-            ]
-        },
-        {
-            "title": "Evaluating Upward Mobility: The Fading American Dream",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/evaluating-upward-mobility-fading-american-dream",
-            "price": "$169",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Big Data Solutions for Social and Economic Disparities",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/big-data-solutions-social-and-economic-disparities",
-            "price": "Free*",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Electrochemistry",
-            "period": "10 weeks long",
-            "link": "https://pll.harvard.edu/course/electrochemistry",
-            "price": "Free*",
-            "category": [
-                "Science"
+                "R",
+                "Genetics",
+                "Statistics",
+                "Biology",
+                "Data Science",
+                "Data Analysis"
             ]
         },
         {
@@ -5137,7 +5157,11 @@
             "link": "https://pll.harvard.edu/course/data-science-capstone",
             "price": "Free*",
             "category": [
-                "Data Science"
+                "R",
+                "Data Visualization",
+                "Data Science",
+                "Data Analysis",
+                "Probability"
             ]
         },
         {
@@ -5146,6 +5170,11 @@
             "link": "https://pll.harvard.edu/course/fundamentals-tinyml",
             "price": "Free*",
             "category": [
+                "Neural Networks",
+                "Machine Learning",
+                "Embedded Systems",
+                "Data Science",
+                "Deep Learning",
                 "Computer Science"
             ]
         },
@@ -5155,6 +5184,11 @@
             "link": "https://pll.harvard.edu/course/deploying-tinyml",
             "price": "Free*",
             "category": [
+                "Neural Networks",
+                "Machine Learning",
+                "Embedded Systems",
+                "Data Science",
+                "Deep Learning",
                 "Computer Science"
             ]
         },
@@ -5164,6 +5198,11 @@
             "link": "https://pll.harvard.edu/course/applications-tinyml",
             "price": "Free*",
             "category": [
+                "Neural Networks",
+                "Machine Learning",
+                "Embedded Systems",
+                "Data Science",
+                "Deep Learning",
                 "Computer Science"
             ]
         },
@@ -5177,20 +5216,21 @@
             ]
         },
         {
-            "title": "Introduction to Data Wise: A Collaborative Process to Improve Learning & Teaching",
-            "period": "10 weeks long",
-            "link": "https://pll.harvard.edu/course/introduction-data-wise-collaborative-process-improve-learning-teaching",
-            "price": "Free*",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
             "title": "CS50 for Lawyers",
             "period": "10 weeks long",
             "link": "https://pll.harvard.edu/course/cs50-lawyers",
             "price": "Free*",
             "category": [
+                "SQL",
+                "Python",
+                "Cybersecurity",
+                "Databases",
+                "Data Structures",
+                "Data Algorithms",
+                "Business Law",
+                "Law",
+                "Computer Networking",
+                "Programming",
                 "Computer Science"
             ]
         },
@@ -5200,6 +5240,16 @@
             "link": "https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python/2023-05",
             "price": "Free*",
             "category": [
+                "Artificial Intelligence",
+                "Natural Language Processing",
+                "Python",
+                "Computer Vision",
+                "Neural Networks",
+                "Data Algorithms",
+                "Machine Learning",
+                "Deep Learning",
+                "Programming",
+                "Algorithms",
                 "Computer Science"
             ]
         },
@@ -5209,7 +5259,16 @@
             "link": "https://pll.harvard.edu/course/cs50s-understanding-technology-0/2023-05",
             "price": "Free*",
             "category": [
-                "Programming"
+                "SQL",
+                "Python",
+                "JavaScript",
+                "CSS",
+                "Data Structures",
+                "Web Development",
+                "HTML",
+                "Programming",
+                "Algorithms",
+                "Computer Science"
             ]
         },
         {
@@ -5218,6 +5277,12 @@
             "link": "https://pll.harvard.edu/course/cs50s-computer-science-business-professionals-0/2023-05",
             "price": "Free*",
             "category": [
+                "Business Intelligence",
+                "Information Technology",
+                "Databases",
+                "Data Structures",
+                "Web Development",
+                "Programming",
                 "Computer Science"
             ]
         },
@@ -5227,7 +5292,11 @@
             "link": "https://pll.harvard.edu/course/cs50s-introduction-programming-python/2023-05",
             "price": "Free*",
             "category": [
-                "Programming"
+                "Python",
+                "Information Technology",
+                "Databases",
+                "Programming",
+                "Computer Science"
             ]
         },
         {
@@ -5236,16 +5305,11 @@
             "link": "https://pll.harvard.edu/course/causal-diagrams-draw-your-assumptions-your-conclusions",
             "price": "Free*",
             "category": [
-                "Data Science"
-            ]
-        },
-        {
-            "title": "Introduction to Probability (on edX)",
-            "period": "10 weeks long",
-            "link": "https://pll.harvard.edu/course/introduction-probability-edx",
-            "price": "$119",
-            "category": [
-                "Mathematics"
+                "Math",
+                "Statistics",
+                "Data Visualization",
+                "Data Science",
+                "Data Analysis"
             ]
         },
         {
@@ -5254,16 +5318,11 @@
             "link": "https://pll.harvard.edu/course/introduction-digital-humanities",
             "price": "$189",
             "category": [
-                "Data Science"
-            ]
-        },
-        {
-            "title": "Financial Analysis and Valuation for Lawyers",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/financial-analysis-and-valuation-lawyers",
-            "price": "$1,600",
-            "category": [
-                "Social Sciences"
+                "History",
+                "Culture",
+                "Data Visualization",
+                "Data Science",
+                "Data Analysis"
             ]
         },
         {
@@ -5272,52 +5331,10 @@
             "link": "https://pll.harvard.edu/course/data-privacy-and-technology",
             "price": "$950",
             "category": [
+                "Data Mining",
+                "Digital Marketing",
+                "Big Data",
                 "Data Science"
-            ]
-        },
-        {
-            "title": "Data Science for Business",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/data-science-business",
-            "price": "$1,600",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Cybersecurity: Managing Risk in the Information Age",
-            "period": "8 weeks long",
-            "link": "https://pll.harvard.edu/course/cybersecurity-managing-risk-information-age",
-            "price": "$3,190",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Data Science Principles",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/data-science-principles",
-            "price": "$950",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Reducing Racial Disparities in Health Care",
-            "period": "5 weeks long",
-            "link": "https://pll.harvard.edu/course/reducing-racial-disparities-health-care/2024-01",
-            "price": "$1,600",
-            "category": [
-                "Health & Medicine"
-            ]
-        },
-        {
-            "title": "Financial Analysis and Valuation for Lawyers",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/financial-analysis-and-valuation-lawyers/2024-02",
-            "price": "$1,600",
-            "category": [
-                "Social Sciences"
             ]
         },
         {
@@ -5326,16 +5343,10 @@
             "link": "https://pll.harvard.edu/course/data-privacy-and-technology/2024-02",
             "price": "$950",
             "category": [
+                "Data Mining",
+                "Digital Marketing",
+                "Big Data",
                 "Data Science"
-            ]
-        },
-        {
-            "title": "Evidence for Equity",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/evidence-equity/2024-12",
-            "price": "$4,800",
-            "category": [
-                "Social Sciences"
             ]
         },
         {
@@ -5344,43 +5355,9 @@
             "link": "https://pll.harvard.edu/course/cs50s-introduction-game-development",
             "price": "Free*",
             "category": [
-                "Programming"
-            ]
-        },
-        {
-            "title": "Starting to Exercise",
-            "period": "2 weeks long",
-            "link": "https://pll.harvard.edu/course/starting-exercise",
-            "price": "$30",
-            "category": [
-                "Health & Medicine"
-            ]
-        },
-        {
-            "title": "Improving Your Business Through a Culture of Health",
-            "period": "9 weeks long",
-            "link": "https://pll.harvard.edu/course/improving-your-business-through-culture-health",
-            "price": "Free*",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Early Childhood Development: Global Strategies for Interventions",
-            "period": "7 weeks long",
-            "link": "https://pll.harvard.edu/course/early-childhood-development-global-strategies-interventions",
-            "price": "Free*",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "CS50's Computer Science for Business Professionals",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/cs50s-computer-science-business-professionals",
-            "price": "Free*",
-            "category": [
-                "Business"
+                "Programming",
+                "Video Games",
+                "Game Development"
             ]
         },
         {
@@ -5389,6 +5366,10 @@
             "link": "https://pll.harvard.edu/course/cs50s-understanding-technology",
             "price": "Free*",
             "category": [
+                "Cybersecurity",
+                "Information Technology",
+                "Computer Networking",
+                "Programming",
                 "Computer Science"
             ]
         },
@@ -5398,1051 +5379,15 @@
             "link": "https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript/2023-05",
             "price": "Free*",
             "category": [
-                "Programming"
-            ]
-        },
-        {
-            "title": "Finance for Senior Executives",
-            "period": "16 days long",
-            "link": "https://pll.harvard.edu/course/finance-senior-executives",
-            "price": "$14,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Strategic Agility—Virtual",
-            "period": "16 days long",
-            "link": "https://pll.harvard.edu/course/strategic-agility-virtual",
-            "price": "$10,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "From Safe to Loving: Building Schools that Foster Individual and Collective Wellbeing for Gender & Sexual Minority Youth",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/safe-loving-building-schools-foster-individual-and-collective-wellbeing-gender-sexual",
-            "price": "$395",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "Disruptive Strategy",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/disruptive-strategy",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading with Finance",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/leading-finance",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Preparing to Be a Corporate Director",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/preparing-be-corporate-director",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Climate Change Policy: Economics and Politics Online",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/climate-change-policy-economics-and-politics-online",
-            "price": "$4,800",
-            "category": [
-                "Science"
-            ]
-        },
-        {
-            "title": "CORe",
-            "period": "17 weeks long",
-            "link": "https://pll.harvard.edu/course/core",
-            "price": "$2,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "CORe",
-            "period": "17 weeks long",
-            "link": "https://pll.harvard.edu/course/core/2023-10-0",
-            "price": "$2,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Universal Design for Learning: Explore",
-            "period": "3 weeks long",
-            "link": "https://pll.harvard.edu/course/universal-design-learning-explore",
-            "price": "$295",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "Accelerating Board Diversity: Succeeding as an Underrepresented Minority Director",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/accelerating-board-diversity-succeeding-underrepresented-minority-director",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Advanced Negotiation Skills",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/advanced-negotiation-skills",
-            "price": "$2,600",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Behavioral Economics—Virtual",
-            "period": "12 days long",
-            "link": "https://pll.harvard.edu/course/behavioral-economics-virtual",
-            "price": "$10,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Harvard Bok Higher Education Teaching Certificate",
-            "period": "9 weeks long",
-            "link": "https://pll.harvard.edu/course/harvard-bok-higher-education-teaching-certificate",
-            "price": "$2,640",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "Contract Law: From Trust to Promise to Contract",
-            "period": "8 weeks long",
-            "link": "https://pll.harvard.edu/course/contractsx-trust-promise-contract/2023-10",
-            "price": "$219",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Certificate in School Management and Leadership (CSML)",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/certificate-school-management-and-leadership-csml",
-            "price": "$499",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "Real Estate Management Program",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/real-estate-management-program",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "High Potentials Leadership Program",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/high-potentials-leadership-program",
-            "price": "$16,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Nonprofit Financial Stewardship: Concepts and Techniques for Strategic Management",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/nonprofit-financial-stewardship-concepts-and-techniques-strategic-management",
-            "price": "$3,900",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leadership and Character in Uncertain Times",
-            "period": "5 weeks long",
-            "link": "https://pll.harvard.edu/course/leadership-and-character-uncertain-times",
-            "price": "$4,200",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Governing for Nonprofit Excellence—Virtual",
-            "period": "9 days long",
-            "link": "https://pll.harvard.edu/course/governing-nonprofit-excellence-virtual",
-            "price": "$4,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Foundations of Clinical Research",
-            "period": "6 months long",
-            "link": "https://pll.harvard.edu/course/foundations-clinical-research",
-            "price": "$6,900 - $7,900",
-            "category": [
-                "Health & Medicine"
-            ]
-        },
-        {
-            "title": "Family Office Wealth Management—Virtual",
-            "period": "3 weeks long",
-            "link": "https://pll.harvard.edu/course/family-office-wealth-management-virtual",
-            "price": "$7,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Health Care Economics",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/health-care-economics",
-            "price": "$1,600",
-            "category": [
-                "Health & Medicine"
-            ]
-        },
-        {
-            "title": "Presenting with Confidence: How Great Leaders Craft and Design Persuasive Presentations That Sell Products, Inspire Teams, and Build Brands",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/presenting-confidence-how-great-leaders-craft-and-design-persuasive-presentations-sell",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Changing the Game: Negotiation and Competitive Decision-Making",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/changing-game-negotiation-and-competitive-decision-making",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Managing Health Care Delivery",
-            "period": "28 weeks long",
-            "link": "https://pll.harvard.edu/course/managing-health-care-delivery",
-            "price": "$27,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Evidence for Decisions: From Description to Decisions",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/evidence-decisions-description-decisions",
-            "price": "$995",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Policy Design and Delivery: A Systematic Approach",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/policy-design-and-delivery-systematic-approach",
-            "price": "$995",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Leadership and Ethics: Moral Leadership in Personal Practice",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/leadership-and-ethics-moral-leadership-personal-practice",
-            "price": "$995",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Universal Design for Learning: Apply",
-            "period": "3 weeks long",
-            "link": "https://pll.harvard.edu/course/universal-design-learning-apply",
-            "price": "$450",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "Disruptive Strategy",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/disruptive-strategy/2023-11",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Training to Teach in Medicine",
-            "period": "6 months long",
-            "link": "https://pll.harvard.edu/course/training-teach-medicine",
-            "price": "$7,900",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "Strategy for Health Care Delivery",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/strategy-health-care-delivery",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Making Corporate Boards More Effective",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/making-corporate-boards-more-effective",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Advanced Business Strategy: Gaining a Competitive Edge",
-            "period": "5 weeks long",
-            "link": "https://pll.harvard.edu/course/advanced-business-strategy-gaining-competitive-edge",
-            "price": "$2,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Families in Business",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/families-business",
-            "price": "$17,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Compensation Committees: New Challenges, New Solutions",
-            "period": "3 days long",
-            "link": "https://pll.harvard.edu/course/compensation-committees-new-challenges-new-solutions",
-            "price": "$7,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Negotiation Mastery",
-            "period": "8 weeks long",
-            "link": "https://pll.harvard.edu/course/negotiation-mastery/2023-11",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "FinTech",
-            "period": "7 weeks long",
-            "link": "https://pll.harvard.edu/course/fintech",
-            "price": "$3,080",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Audit Committees in a New Era of Governance",
-            "period": "3 days long",
-            "link": "https://pll.harvard.edu/course/audit-committees-new-era-governance",
-            "price": "$7,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "CORe",
-            "period": "12 weeks long",
-            "link": "https://pll.harvard.edu/course/core/2023-11",
-            "price": "$2,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Women on Boards: Succeeding as a Corporate Director",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/women-boards-succeeding-corporate-director",
-            "price": "$14,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Succeeding as a Strategic CFO",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/succeeding-strategic-cfo",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Authentic Leader Development",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/authentic-leader-development",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading and Building a Culture of Innovation",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/leading-and-building-culture-innovation",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Risk Management for Corporate Leaders—Virtual",
-            "period": "11 days long",
-            "link": "https://pll.harvard.edu/course/risk-management-corporate-leaders-virtual",
-            "price": "$8,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Strategy: Building and Sustaining Competitive Advantage",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/strategy-building-and-sustaining-competitive-advantage",
-            "price": "$17,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Real Estate Development 101: Focusing on the Basics",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/real-estate-development-101-focusing-basics",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Developing Yourself as a Leader—Virtual",
-            "period": "14 weeks long",
-            "link": "https://pll.harvard.edu/course/developing-yourself-leader-virtual",
-            "price": "$5,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Mergers and Acquisitions: Strategy, Execution, and Post-Merger Management",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/mergers-and-acquisitions-strategy-execution-and-post-merger-management",
-            "price": "$17,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "CORe",
-            "period": "12 weeks long",
-            "link": "https://pll.harvard.edu/course/core/2024-01",
-            "price": "$2,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Managing Innovation",
-            "period": "5 days long",
-            "link": "https://pll.harvard.edu/course/managing-innovation",
-            "price": "$12,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Cybersecurity: The Intersection of Policy and Technology",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/cybersecurity-intersection-policy-and-technology",
-            "price": "$4,800",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Driving Organizational Agility—Virtual",
-            "period": "17 days long",
-            "link": "https://pll.harvard.edu/course/driving-organizational-agility-virtual",
-            "price": "$7,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Credential of Leadership, Impact, and Management in Business (CLIMB)",
-            "period": "52 weeks long",
-            "link": "https://pll.harvard.edu/course/credential-leadership-impact-and-management-business-climb",
-            "price": "$15,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Real Estate Finance 101: Focusing on the Basics",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/real-estate-finance-101-focusing-basics",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading Professional Service Firms",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/leading-professional-service-firms",
-            "price": "$17,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Disruptive Strategy",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/disruptive-strategy/2024-01",
-            "price": "$1,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Health Care Economics",
-            "period": "6 weeks long",
-            "link": "https://pll.harvard.edu/course/health-care-economics/2024-01",
-            "price": "$1,600",
-            "category": [
-                "Health & Medicine"
-            ]
-        },
-        {
-            "title": "Aligning Strategy and Sales",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/aligning-strategy-and-sales",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Transforming Customer Experiences",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/transforming-customer-experiences",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading through the Changing Media Landscape (Online)",
-            "period": "2 weeks long",
-            "link": "https://pll.harvard.edu/course/leading-through-changing-media-landscape-online",
-            "price": "$4,800",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Affordable Housing: Principles for Changing Domestic and Global Markets",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/affordable-housing-principles-changing-domestic-and-global-markets/2024-02",
-            "price": "$1,750 - $1,950",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading Global Businesses",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/leading-global-businesses-0",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Launching New Ventures: Jump-Starting Innovation for Entrepreneurs and Business Owners",
-            "period": "7 days long",
-            "link": "https://pll.harvard.edu/course/launching-new-ventures-jump-starting-innovation-entrepreneurs-and-business-owners",
-            "price": "$18,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Foundations of Private Equity and Venture Capital",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/foundations-private-equity-and-venture-capital",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "The Women's Leadership Forum",
-            "period": "5 days long",
-            "link": "https://pll.harvard.edu/course/womens-leadership-forum",
-            "price": "$13,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Questions at the Core: Extending the Question Formulation Technique to Sustain an Inquiry-based Culture in Schools",
-            "period": "3 weeks long",
-            "link": "https://pll.harvard.edu/course/questions-core-extending-question-formulation-technique-sustain-inquiry-based-culture",
-            "price": "$375",
-            "category": [
-                "Education & Teaching"
-            ]
-        },
-        {
-            "title": "Building a Legacy: Family Office Wealth Management",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/building-legacy-family-office-wealth-management",
-            "price": "$12,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Climate Change and Energy (On Campus)",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/climate-change-and-energy-campus",
-            "price": "$10,200",
-            "category": [
-                "Science"
-            ]
-        },
-        {
-            "title": "Preparing to Be a Corporate Director",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/preparing-be-corporate-director/2024-03",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading Change and Organizational Renewal",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/leading-change-and-organizational-renewal",
-            "price": "$17,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Accelerated Leadership Program",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/accelerated-leadership-program-0",
-            "price": "$14,500",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Driving Nonprofit Performance and Innovation—Virtual",
-            "period": "9 days long",
-            "link": "https://pll.harvard.edu/course/driving-nonprofit-performance-and-innovation-virtual",
-            "price": "$4,200",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Driving Digital Strategy",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/driving-digital-strategy",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Strategic Negotiations: Dealmaking for the Long Term",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/strategic-negotiations-dealmaking-long-term",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading in the Digital Era",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/leading-digital-era",
-            "price": "$14,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Competing in the Age of Digital Platforms",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/competing-age-digital-platforms",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Women of Color Leadership Program",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/women-color-leadership-program",
-            "price": "$5,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Communicating for Impact—Virtual",
-            "period": "2 weeks long",
-            "link": "https://pll.harvard.edu/course/communicating-impact-virtual",
-            "price": "$7,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Persuasive Communication: Narrative, Evidence, and Impact (Online)",
-            "period": "3 weeks long",
-            "link": "https://pll.harvard.edu/course/persuasive-communication-narrative-evidence-and-impact-online",
-            "price": "$4,800",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "The HR-Executive Suite Connection",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/hr-executive-suite-connection",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading Professional Service Firms",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/leading-professional-service-firms/2024-05",
-            "price": "$17,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Authentic Leader Development",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/authentic-leader-development/2024-05",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Mergers and Acquisitions: Structuring and Leading Deals",
-            "period": "5 days long",
-            "link": "https://pll.harvard.edu/course/mergers-and-acquisitions-structuring-and-leading-deals-0",
-            "price": "$15,750",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "High Potentials Leadership Program",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/high-potentials-leadership-program/2024-05",
-            "price": "$17,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Value Creation Through Effective Boards",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/value-creation-through-effective-boards",
-            "price": "$6,732 - $7,480",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "The Business of Entertainment, Media, and Sports",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/business-entertainment-media-and-sports",
-            "price": "$12,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Strategy: Building and Sustaining Competitive Advantage",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/strategy-building-and-sustaining-competitive-advantage/2024-06",
-            "price": "$17,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leadership in Corporate Counsel",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/leadership-corporate-counsel-0",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Real Estate Development Fundamentals",
-            "period": "2 days long",
-            "link": "https://pll.harvard.edu/course/real-estate-development-fundamentals",
-            "price": "$1,950",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Rising Generation in the Family Enterprise",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/rising-generation-family-enterprise",
-            "price": "$12,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Real Estate Finance Fundamentals",
-            "period": "2 days long",
-            "link": "https://pll.harvard.edu/course/real-estate-finance-fundamentals",
-            "price": "$1,950",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Disruptive Innovation",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/disruptive-innovation",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Growing as a Purposeful Leader",
-            "period": "17 weeks long",
-            "link": "https://pll.harvard.edu/course/growing-purposeful-leader",
-            "price": "$14,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Investment Management Workshop",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/investment-management-workshop",
-            "price": "$11,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading Successful Programs: Using Evidence to Assess Effectiveness (Online)",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/leading-successful-programs-using-evidence-assess-effectiveness-online",
-            "price": "$4,800",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Driving Corporate Performance: Aligning Scorecards and Structure for Strategy Execution",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/driving-corporate-performance-aligning-scorecards-and-structure-strategy-execution",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Advanced Management Development Program in Real Estate",
-            "period": "1 year long",
-            "link": "https://pll.harvard.edu/course/advanced-management-development-program-real-estate",
-            "price": "$49,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Making Corporate Boards More Effective",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/making-corporate-boards-more-effective/2024-07",
-            "price": "$12,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Managing Sales Teams and Distribution Channels",
-            "period": "5 days long",
-            "link": "https://pll.harvard.edu/course/managing-sales-teams-and-distribution-channels",
-            "price": "$12,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Compensation Committees: New Challenges, New Solutions",
-            "period": "3 days long",
-            "link": "https://pll.harvard.edu/course/compensation-committees-new-challenges-new-solutions/2024-07",
-            "price": "$7,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Audit Committees in a New Era of Governance",
-            "period": "3 days long",
-            "link": "https://pll.harvard.edu/course/audit-committees-new-era-governance/2024-07",
-            "price": "$7,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Changing the Game: Negotiation and Competitive Decision-Making",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/changing-game-negotiation-and-competitive-decision-making/2024-07",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Strategic Perspectives in Nonprofit Management",
-            "period": "7 days long",
-            "link": "https://pll.harvard.edu/course/strategic-perspectives-nonprofit-management",
-            "price": "$7,250",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Comparative Tax Policy and Administration (On Campus)",
-            "period": "2 weeks long",
-            "link": "https://pll.harvard.edu/course/comparative-tax-policy-and-administration-campus",
-            "price": "$13,700",
-            "category": [
-                "Social Sciences"
-            ]
-        },
-        {
-            "title": "Climate Change Policy: Economics and Politics Online",
-            "period": "1 week long",
-            "link": "https://pll.harvard.edu/course/climate-change-policy-economics-and-politics-online/2024-09",
-            "price": "$4,800",
-            "category": [
-                "Science"
-            ]
-        },
-        {
-            "title": "High Potentials Leadership Program",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/high-potentials-leadership-program/2024-10",
-            "price": "$17,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Changing the Game: Negotiation and Competitive Decision-Making",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/changing-game-negotiation-and-competitive-decision-making/2024-10",
-            "price": "$14,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Making Corporate Boards More Effective",
-            "period": "4 days long",
-            "link": "https://pll.harvard.edu/course/making-corporate-boards-more-effective/2024-11",
-            "price": "$12,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Compensation Committees: New Challenges, New Solutions",
-            "period": "3 days long",
-            "link": "https://pll.harvard.edu/course/compensation-committees-new-challenges-new-solutions/2024-11",
-            "price": "$7,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Audit Committees in a New Era of Governance",
-            "period": "3 days long",
-            "link": "https://pll.harvard.edu/course/audit-committees-new-era-governance/2024-11",
-            "price": "$7,500",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Leading and Building a Culture of Innovation",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/leading-and-building-culture-innovation/2024-12",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Aligning Strategy and Sales",
-            "period": "6 days long",
-            "link": "https://pll.harvard.edu/course/aligning-strategy-and-sales/2024-12",
-            "price": "$16,000",
-            "category": [
-                "Business"
-            ]
-        },
-        {
-            "title": "Cell Biology: Mitochondria",
-            "period": "4 weeks long",
-            "link": "https://pll.harvard.edu/course/cell-biology-mitochondria",
-            "price": "Free*",
-            "category": [
-                "Science"
+                "SQL",
+                "Python",
+                "JavaScript",
+                "CSS",
+                "Bootstrap",
+                "Web Design",
+                "HTML",
+                "Programming",
+                "Computer Science"
             ]
         }
     ]
