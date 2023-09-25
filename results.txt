@@ -144,14 +144,14 @@ Tempo para concluir: 1 h
 Como acessar: https://www.learncafe.com/cursos/curso-de-serigrafia---programacao-de-bordados
 __________________________________________________ 
 __________________________________________________ 
-Título: Introdução a Lógica de Programação em Portugol
-Tempo para concluir: 6 h
-Como acessar: https://www.learncafe.com/cursos/logica-de-programacao-em-portugol-basico
-__________________________________________________ 
-__________________________________________________ 
 Título: Curso de Programação em C# (C Sharp)
 Tempo para concluir: 4 h
 Como acessar: https://www.learncafe.com/cursos/curso-deprogramacao-em-c-sharp
+__________________________________________________ 
+__________________________________________________ 
+Título: Introdução a Lógica de Programação em Portugol
+Tempo para concluir: 6 h
+Como acessar: https://www.learncafe.com/cursos/logica-de-programacao-em-portugol-basico
 __________________________________________________ 
 __________________________________________________ 
 Título: Web marketing
@@ -239,6 +239,16 @@ Tempo para concluir: 2 h
 Como acessar: https://www.learncafe.com/cursos/curso-de-django---programacao-web-com-python
 __________________________________________________ 
 __________________________________________________ 
+Título: Curso de Princípios do Web Design: Cores
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/principios-web-design-cores-64051
+__________________________________________________ 
+__________________________________________________ 
+Título: Gerenciamento de Projeto com Web2Project
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/gerenciamento-de-projeto-com-web2project
+__________________________________________________ 
+__________________________________________________ 
 Título: Acesso à internet e desenvolvimento de trabalhos na web
 Tempo para concluir: 192 h
 Como acessar: https://www.learncafe.com/cursos/acesso-a-internet-e-desenvolvimento-de-trabalhos-na-web
@@ -247,16 +257,6 @@ __________________________________________________
 Título: Android Studio com web services e API
 Tempo para concluir: 30 h
 Como acessar: https://www.learncafe.com/cursos/android-studio-com-web-services-e-api
-__________________________________________________ 
-__________________________________________________ 
-Título: Gerenciamento de Projeto com Web2Project
-Tempo para concluir: 2 h
-Como acessar: https://www.learncafe.com/cursos/gerenciamento-de-projeto-com-web2project
-__________________________________________________ 
-__________________________________________________ 
-Título: Curso de Princípios do Web Design: Cores
-Tempo para concluir: 2 h
-Como acessar: https://www.learncafe.com/cursos/principios-web-design-cores-64051
 __________________________________________________ 
 __________________________________________________ 
 Título: GWT - Google Web Toolkit
@@ -289,9 +289,9 @@ Tempo para concluir: 50 h
 Como acessar: https://www.learncafe.com/cursos/xamarin-com-web-services
 __________________________________________________ 
 __________________________________________________ 
-Título: Angular JS completo - Criação de sistemas WEB
-Tempo para concluir: 20 h
-Como acessar: https://www.learncafe.com/cursos/curso-de-angular-js
+Título: Sistemas com Django 2.1 -WEB Python
+Tempo para concluir: 25 h
+Como acessar: https://www.learncafe.com/cursos/sistemas-com-django-21-sistema-web-python
 __________________________________________________ 
 __________________________________________________ 
 Título: TECNOLOGIAS DE BANCO DE DADOS
@@ -324,14 +324,14 @@ Tempo para concluir: 30 h
 Como acessar: https://www.learncafe.com/cursos/visual-basic-com-banco-de-dados
 __________________________________________________ 
 __________________________________________________ 
-Título: Bancos de Dados Geográficos
-Tempo para concluir: 5 h
-Como acessar: https://www.learncafe.com/cursos/bancos-de-dados-geograficos-
-__________________________________________________ 
-__________________________________________________ 
 Título: Banco de Dados Oracle
 Tempo para concluir: 100 h
 Como acessar: https://www.learncafe.com/cursos/oracle
+__________________________________________________ 
+__________________________________________________ 
+Título: Bancos de Dados Geográficos
+Tempo para concluir: 5 h
+Como acessar: https://www.learncafe.com/cursos/bancos-de-dados-geograficos-
 __________________________________________________ 
 __________________________________________________ 
 Título: Banco de Dados MySQL
@@ -359,6 +359,11 @@ Tempo para concluir: 20 h
 Como acessar: https://www.learncafe.com/cursos/curso-de-android-com-mysql
 __________________________________________________ 
 __________________________________________________ 
+Título: Curso de Excel Avançado com Banco de Dados
+Tempo para concluir: 2 h
+Como acessar: https://www.learncafe.com/cursos/curso-de-excel-avancado-com-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
 Título: TSQL - Banco de Dados SQL Server
 Tempo para concluir: 40 h
 Como acessar: https://www.learncafe.com/cursos/curso-de-tsql
@@ -367,11 +372,6 @@ __________________________________________________
 Título: Curso de MySQL: Introdução ao Banco de Dados
 Tempo para concluir: 10 h
 Como acessar: https://www.learncafe.com/cursos/mysql-introducao-banco-dados-65773
-__________________________________________________ 
-__________________________________________________ 
-Título: Curso de Excel Avançado com Banco de Dados
-Tempo para concluir: 2 h
-Como acessar: https://www.learncafe.com/cursos/curso-de-excel-avancado-com-banco-de-dados
 __________________________________________________ 
 __________________________________________________ 
 Título: Banco de Dados e Jogos com Python - Avançado
@@ -409,19 +409,14 @@ Tempo para concluir: 35 h
 Como acessar: https://www.learncafe.com/cursos/microsoft-access-2010-sistemas-com-banco-de-dados
 __________________________________________________ 
 __________________________________________________ 
-Título: Delphi 10 com Banco de Dados Mysql, SQL e Access
-Tempo para concluir: 1 h
-Como acessar: https://www.learncafe.com/cursos/delphi-10-com-banco-de-dados-mysql,-sql-e-access
-__________________________________________________ 
-__________________________________________________ 
 Título: Mysql com Banco de Dados para a Criação de Sites e Sistemas
 Tempo para concluir: 25 h
 Como acessar: https://www.learncafe.com/cursos/curso-de-mysql-com-banco-de-dados
 __________________________________________________ 
 __________________________________________________ 
-Título: PHP 7 e Mysqli - PHP com Banco de Dados
-Tempo para concluir: 20 h
-Como acessar: https://www.learncafe.com/cursos/php-7-e-mysqli
+Título: Delphi 10 com Banco de Dados Mysql, SQL e Access
+Tempo para concluir: 1 h
+Como acessar: https://www.learncafe.com/cursos/delphi-10-com-banco-de-dados-mysql,-sql-e-access
 __________________________________________________ 
 __________________________________________________ 
 Título: Loja Virtual - PHP e banco de dados avançado
@@ -432,4 +427,9 @@ __________________________________________________
 Título: Xamarin C# - Aplicativo Restaurante e Banco de Dados
 Tempo para concluir: 1 h
 Como acessar: https://www.learncafe.com/cursos/xamarin-aplicativo-restaurante-e-banco-de-dados
+__________________________________________________ 
+__________________________________________________ 
+Título: PHP 7 e Mysqli - PHP com Banco de Dados
+Tempo para concluir: 20 h
+Como acessar: https://www.learncafe.com/cursos/php-7-e-mysqli
 __________________________________________________ 
