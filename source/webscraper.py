@@ -1,11 +1,13 @@
 import concurrent.futures
+import multiprocessing
+
 import requests
 from bs4 import BeautifulSoup
-from source.constants.harvard import HarvardConstants
 
+from source.constants.harvard import HarvardConstants
 from source.constants.learncafe import LearnConstants
 from source.utils import Utils
-import multiprocessing
+
 
 class Webscraper:
 
@@ -168,6 +170,83 @@ class Webscraper:
                 all_results.append(course_dict)
         
         self.shared_result.extend(all_results)
+        
+    # def _get_courses_futurelearn(self):
+    #     with concurrent.futures.ThreadPoolExecutor() as executor:
+    #         page = self.session.get("https://www.futurelearn.com/courses?filter_category=17&filter_course_type=open&filter_availability=started")
+    #         soup = BeautifulSoup(page.content, "html.parser")
+    #         content = soup.find("div", class_="m-filter__content")
+    #         all_cards = content.find_all("div", class_="m-card Container-wrapper_7nJ95 Container-grey_75xp-")
+    #         curso_teste = all_cards[0]
+    #         course_title = curso_teste.find("div", class_="Title-wrapper_5eSVQ").text
+    #         items = curso_teste.find("div", class_="align-module_itemsWrapper__utBam align-module_sBreakpointSpacing3__2Wmck align-module_sBreakpointAlignstart__3c4gz align-module_wrap__kOYRr")
+    #         items = items.find_all("div")
+    #         link = curso_teste.find("a", class_="index-module_anchor__24Vxj")
+    #         course_dict = {
+    #         "title": course_title,
+    #         "period":  f"{items[0].text}, {items[1].text}",
+    #         "link": link['href'],
+    #         "price": pricing.text.strip(),
+    #         "category": tuple(category_list),
+    #         "created date": created_date, // problema: nao tem data
+    #         "created by": created_by
+    #         }
+    
+    def _get_course_info_udacity(self, course):
+        course_title = course.find("div", class_="chakra-heading css-1rsglaw").text.strip()
+        link = f"https://www.udacity.com{course.find('a')['href']}"
+        
+        course_page = self.session.get(link)
+        soup = BeautifulSoup(course_page.content, "html.parser")
+        category = soup.find("nav", attrs={"aria-label":"breadcrumb"}).find_all("li")[1].text.replace("School of", "")
+        category = category.replace("School of", "").strip().title()
+        
+        info = soup.find("div", class_="chakra-container css-8ptr35").find_all("div", class_="css-135ny1a")
+        period = info[1].text
+        created_date = info[-1].text
+        
+        created_by = soup.find("h2", text="Taught By The Best").parent.find_all("p", class_="chakra-text css-1vvhv40")
+        created_by = [instructor.text.strip() for instructor in created_by]
+        
+        free_badge = soup.find("span", class_="chakra-badge css-voosbm", text="Free")
+        
+        pricing = None
+        if free_badge:
+            pricing = "Gratuito"
+        else:
+            pricing = "Inscrição na plataforma" # Não consegui captar o preço específico via webscrapping, aparece um Loading...
+            
+        course_dict = {
+            "title": course_title,
+            "period": period,
+            "link": link,
+            "price": pricing,
+            "category": tuple([category]),
+            "created date": created_date,
+            "created by": tuple(created_by)
+        }
+    
+    
+    def _get_courses_from_udacity(self):
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = []
+            page = self.session.get("https://www.udacity.com/catalog/all/any-price/any-school/any-skill/any-difficulty/any-duration/any-type/most-popular/page-1")
+            soup = BeautifulSoup(page.content, "html.parser")
+            courses = soup.find_all("article", class_="css-1gj5mr6")
+            print(len(courses))
+            for course in courses:
+                # future = executor.submit(self._get_course_info_udacity, course)
+                # futures.append(future)
+                self._get_course_info_udacity(course)
+                
+                pass
+            
+            # NÃO FUNCIONA ALÉM DA PAGINA 1 AAAAAAAAAA
+            # pagination = soup.find("div", class_="css-1ve32j8")
+            # next_page = pagination.find("button", attrs={"aria-label": "Show next page of reviews"})
+            # print(pagination.text)
+
+        
 
     # TODO -> now we have two functions for each step of the system processing but I think we can use one for both sites
     def run_processing_harvard(self, search_tags):
@@ -181,6 +260,18 @@ class Webscraper:
         with multiprocessing.Pool(processes=4) as pool:
             pool.map(self._get_courses_from_learncafe, [(tag,) for tag in search_tags])
         self.session.close()
+        
+    def run_processing_udacity(self):
+        self.session = requests.Session()
+        with multiprocessing.Pool(processes=4) as pool:
+            self._get_courses_from_udacity()
+        self.session.close()
+        
+    # def run_processing_futurelearn(self):
+    #     self.session = requests.Session()
+    #     with multiprocessing.Pool(processes=4) as pool:
+    #         self._get_courses_futurelearn()
+    #     self.session.close()
 
 
     def get_results(self):

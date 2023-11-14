@@ -1,5 +1,6 @@
-from source.webscraper import Webscraper
 import time
+
+from source.webscraper import Webscraper
 
 
 def main():
@@ -18,10 +19,11 @@ def main():
     
     webscraper = Webscraper(harvard_accepted_categories, learn_accepted_categories)
 
-    webscraper.run_processing_harvard(harvard_search_tags)
-    webscraper.run_processing_learncafe(learn_search_tags)
+    # webscraper.run_processing_harvard(harvard_search_tags)
+    # webscraper.run_processing_learncafe(learn_search_tags)
+    webscraper.run_processing_udacity()
 
-    webscraper.get_results()
+    # webscraper.get_results()
 
     end_time = time.time()
     print("Finished.")

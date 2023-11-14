@@ -1,5 +1,6 @@
 import json
-from googletrans import Translator
+
+# from googletrans import Translator
 
 class Utils:
 
@@ -12,20 +13,20 @@ class Utils:
         aux = weeks * self.days_per_week * self.hours_per_day
         return str(aux) + " h"
     
-    # TODO -> Fix this function
-    def english_to_portuguese(self, dict_list):
-        translated = []
+    # # TODO -> Fix this function
+    # def english_to_portuguese(self, dict_list):
+    #     translated = []
 
-        translator = Translator()
-        for d in dict_list:
+    #     translator = Translator()
+    #     for d in dict_list:
 
-            translated_dict = {}
-            for key, value in d.items():
-                translation = translator.translate(value, src='en', dest='pt')
-                translated_dict[key] = translation.text
+    #         translated_dict = {}
+    #         for key, value in d.items():
+    #             translation = translator.translate(value, src='en', dest='pt')
+    #             translated_dict[key] = translation.text
 
-            translated.append(translated_dict)
-        return translated
+    #         translated.append(translated_dict)
+    #     return translated
     
     def remove_duplicates(self, input_list):
         seen = set()
