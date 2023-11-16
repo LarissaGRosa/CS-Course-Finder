@@ -17,11 +17,15 @@ def main():
     harvard_accepted_categories = {"Programming", "Data Science",
                            "Computer Science", "Machine Learning"}
     
+    pluralsight_search_tags = ["programming", "data+science", "web", "database", "machine+learning"]
+    # pluralsight_search_tags = ["programming"]
+
+    
     webscraper = Webscraper(harvard_accepted_categories, learn_accepted_categories)
 
     # webscraper.run_processing_harvard(harvard_search_tags)
     # webscraper.run_processing_learncafe(learn_search_tags)
-    webscraper.run_processing_udacity()
+    webscraper.run_processing_pluralsight(pluralsight_search_tags)
 
     # webscraper.get_results()
 

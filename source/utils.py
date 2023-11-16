@@ -41,6 +41,33 @@ class Utils:
                 output_list.append(d)
 
         return output_list
+    
+    def remove_duplicates_adding_category(self, input_list):
+        seen = set()
+        output_list = []
+
+        for d in input_list:
+            unique_key = frozenset((key, value) for key, value in d.items() if key != 'category')
+
+            if unique_key not in seen:
+                seen.add(unique_key)
+                output_list.append(d)
+            else:
+                existing_index = next(i for i, item in enumerate(output_list) if frozenset((key, value) for key, value in item.items() if key != 'category') == unique_key)
+                print(output_list[existing_index])
+                existing_category_list = output_list[existing_index]['category']
+                if d['category'] not in existing_category_list:
+                    output_list[existing_index]['category'] = tuple(set(existing_category_list).union(set(d['category'])))
+        
+        return output_list
+    
+    def save_pluralsight_results(self, results):
+        unique_results = self.remove_duplicates_adding_category(results)
+        
+        result_dict = {"length": len(unique_results), "courses": unique_results}
+
+        with open("results.json", "w", encoding='utf-8') as f:
+            json.dump(result_dict, f, indent=4, ensure_ascii=False)
 
     def save_results(self, all_results):
         # Convert each dictionary to a hashable frozenset

@@ -3,6 +3,12 @@ import multiprocessing
 
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 from source.constants.harvard import HarvardConstants
 from source.constants.learncafe import LearnConstants
@@ -19,6 +25,8 @@ class Webscraper:
         self.harvard_accepted_categories = harvard_accepted_categories
         self.learncafe_accepted_categories = learncafe_accepted_categories
         self.session = None
+        self.driver = None
+        self.TIMEOUT = 3
         print("Webscrapper class started")
 
     def _get_course_info_harvard(self, course):
@@ -171,81 +179,93 @@ class Webscraper:
         
         self.shared_result.extend(all_results)
         
-    # def _get_courses_futurelearn(self):
-    #     with concurrent.futures.ThreadPoolExecutor() as executor:
-    #         page = self.session.get("https://www.futurelearn.com/courses?filter_category=17&filter_course_type=open&filter_availability=started")
-    #         soup = BeautifulSoup(page.content, "html.parser")
-    #         content = soup.find("div", class_="m-filter__content")
-    #         all_cards = content.find_all("div", class_="m-card Container-wrapper_7nJ95 Container-grey_75xp-")
-    #         curso_teste = all_cards[0]
-    #         course_title = curso_teste.find("div", class_="Title-wrapper_5eSVQ").text
-    #         items = curso_teste.find("div", class_="align-module_itemsWrapper__utBam align-module_sBreakpointSpacing3__2Wmck align-module_sBreakpointAlignstart__3c4gz align-module_wrap__kOYRr")
-    #         items = items.find_all("div")
-    #         link = curso_teste.find("a", class_="index-module_anchor__24Vxj")
-    #         course_dict = {
-    #         "title": course_title,
-    #         "period":  f"{items[0].text}, {items[1].text}",
-    #         "link": link['href'],
-    #         "price": pricing.text.strip(),
-    #         "category": tuple(category_list),
-    #         "created date": created_date, // problema: nao tem data
-    #         "created by": created_by
-    #         }
-    
-    def _get_course_info_udacity(self, course):
-        course_title = course.find("div", class_="chakra-heading css-1rsglaw").text.strip()
-        link = f"https://www.udacity.com{course.find('a')['href']}"
+    def _get_course_info_pluralsight(self, course, search_tag):
+        is_lab_label = course.find("div", class_="is-labs-label")
+        if is_lab_label:
+            return {}
         
-        course_page = self.session.get(link)
-        soup = BeautifulSoup(course_page.content, "html.parser")
-        category = soup.find("nav", attrs={"aria-label":"breadcrumb"}).find_all("li")[1].text.replace("School of", "")
-        category = category.replace("School of", "").strip().title()
+        course_title = course.find("h3").find("strong").text.strip()
+        created_by = course.find("h4").text.replace("by ", "").strip()
+        period = course.find("div", class_="duration").text.strip()
+        course_link = course.find("a", class_="browse-search-results-item-link")["href"]
         
-        info = soup.find("div", class_="chakra-container css-8ptr35").find_all("div", class_="css-135ny1a")
-        period = info[1].text
-        created_date = info[-1].text
+        self.driver.get(course_link)
+
+        wait = WebDriverWait(self.driver, self.TIMEOUT)
+        try:
+            wait.until(EC.presence_of_element_located((By.XPATH, "//h2[text()='Course info']")))
+        except TimeoutException:
+            print("TimeoutException", course_link)
+            return {}
         
-        created_by = soup.find("h2", text="Taught By The Best").parent.find_all("p", class_="chakra-text css-1vvhv40")
-        created_by = [instructor.text.strip() for instructor in created_by]
+        soup = BeautifulSoup(self.driver.page_source, "html.parser")
+        info_container = soup.find("h2", text="Course info").parent
+        rows = info_container.find_all("div", class_="course-info-rows")
         
-        free_badge = soup.find("span", class_="chakra-badge css-voosbm", text="Free")
-        
-        pricing = None
-        if free_badge:
-            pricing = "Gratuito"
-        else:
-            pricing = "Inscrição na plataforma" # Não consegui captar o preço específico via webscrapping, aparece um Loading...
+        created_date = None
+        for row in rows:
+            items = row.find_all("div", class_="course-info-row-item")
+            if items[0].text == "Updated":
+                created_date = items[1].text.strip()
+                break
             
+        price_info = soup.find("div", class_="cta-buttons").text.replace("Get started", " ").replace("\n", " ").strip()
+        
         course_dict = {
             "title": course_title,
             "period": period,
-            "link": link,
-            "price": pricing,
-            "category": tuple([category]),
+            "link": course_link,
+            "price": price_info,
+            "category": tuple([search_tag.replace("+", " ").title()]), # Unir em caso de resultados repetidos
             "created date": created_date,
-            "created by": tuple(created_by)
+            "created by": created_by
         }
-    
-    
-    def _get_courses_from_udacity(self):
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            futures = []
-            page = self.session.get("https://www.udacity.com/catalog/all/any-price/any-school/any-skill/any-difficulty/any-duration/any-type/most-popular/page-1")
-            soup = BeautifulSoup(page.content, "html.parser")
-            courses = soup.find_all("article", class_="css-1gj5mr6")
-            print(len(courses))
-            for course in courses:
-                # future = executor.submit(self._get_course_info_udacity, course)
-                # futures.append(future)
-                self._get_course_info_udacity(course)
-                
-                pass
-            
-            # NÃO FUNCIONA ALÉM DA PAGINA 1 AAAAAAAAAA
-            # pagination = soup.find("div", class_="css-1ve32j8")
-            # next_page = pagination.find("button", attrs={"aria-label": "Show next page of reviews"})
-            # print(pagination.text)
+        
 
+        return course_dict
+        
+        
+    def _get_courses_from_pluralsight(self, search_tags):  
+        all_results = []
+             
+        for tag in search_tags:
+            self.driver.get(f"https://www.pluralsight.com/browse?=&q={tag}")
+            wait = WebDriverWait(self.driver, 10)
+            try:
+                wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "browse-search-results-item")))
+            except TimeoutException:
+                break
+            
+            while True:
+                soup = BeautifulSoup(self.driver.page_source, "html.parser")
+                results = soup.find_all("li", class_="browse-search-results-item large-12 columns")
+                
+                self.driver.execute_script("window.open('about:blank', '_blank');")
+                self.driver.switch_to.window(self.driver.window_handles[1])
+                for course in results:
+                    course_dict = self._get_course_info_pluralsight(course, tag)
+                    if course_dict != {}:
+                        all_results.append(course_dict)
+                
+                self.driver.close()
+                self.driver.switch_to.window(self.driver.window_handles[0])
+                                        
+                try:
+                    element_to_click = self.driver.find_element(By.XPATH, '//div[contains(@class, "pagination-button right") and not(contains(@class, "deactivated"))]')
+                except NoSuchElementException:
+                    break
+                
+                element_to_click.click()
+                                
+                wait = WebDriverWait(self.driver, self.TIMEOUT)
+                try:
+                    wait.until_not(EC.presence_of_element_located((By.CSS_SELECTOR, 'ul.browse-search-results-list.loading')))
+                except TimeoutException:
+                    print("TimeoutException trocando de página")        
+        
+        self.utils.save_pluralsight_results(all_results)
+        
+            
         
 
     # TODO -> now we have two functions for each step of the system processing but I think we can use one for both sites
@@ -261,18 +281,19 @@ class Webscraper:
             pool.map(self._get_courses_from_learncafe, [(tag,) for tag in search_tags])
         self.session.close()
         
-    def run_processing_udacity(self):
+    
+    def run_processing_pluralsight(self, search_tags):
+        options = Options()
+        options.headless = True
+        self.driver = webdriver.Firefox(options=options)
         self.session = requests.Session()
-        with multiprocessing.Pool(processes=4) as pool:
-            self._get_courses_from_udacity()
-        self.session.close()
         
-    # def run_processing_futurelearn(self):
-    #     self.session = requests.Session()
-    #     with multiprocessing.Pool(processes=4) as pool:
-    #         self._get_courses_futurelearn()
-    #     self.session.close()
-
+        self._get_courses_from_pluralsight(search_tags) # Não consegui com pool
+        
+        self.session.close()
+        self.driver.quit()
+        
+            
 
     def get_results(self):
         return self.utils.save_results(list(self.shared_result))
