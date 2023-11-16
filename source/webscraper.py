@@ -109,43 +109,47 @@ class Webscraper:
             
             for future in concurrent.futures.as_completed(futures):
                 course_dict = future.result()
-                all_results.append(course_dict)
+                if course_dict != {}:
+                    all_results.append(course_dict)
                 
         self.shared_result.extend(all_results)
 
     def _get_course_info_learn_cafe(self, course):
-        category = course.find("span", class_="card-category")
-        category_list = [c.text for c in category.find_all("span")]
+        try:
+            category = course.find("span", class_="card-category")
+            category_list = [c.text for c in category.find_all("span")]
 
-        if not any(x in category_list for x in self.learncafe_accepted_categories):
+            if not any(x in category_list for x in self.learncafe_accepted_categories):
+                return {}
+
+            hours = course.find("span", class_="card-hours")
+            pricing = course.find("p", class_="card-price").find("b")
+
+            if pricing.find("span"):
+                pricing.find("span").decompose()
+
+            
+            course_page = self.session.get(course['href'])
+            course_soup = BeautifulSoup(
+                course_page.content, "html.parser")
+            course_title = course_soup.find("h1").text
+            course_info = course_soup.find("div", class_="row information-boxes mb-4")
+            created_date = course_info.find_all("div", class_="true-center").pop(-1).find("p").text
+            created_by = course_soup.find("div", class_="content-about position-relative").find("h5").text
+            
+            course_dict = {
+                "title": course_title,
+                "period": hours.text.strip(),
+                "link": course['href'],
+                "price": pricing.text.strip(),
+                "category": tuple(category_list),
+                "created date": created_date,
+                "created by": created_by
+            }
+            return course_dict
+        except AttributeError:
+            print("Attribute error on", course["href"]) # Caso raro, mas aconteceu uma vez
             return {}
-
-        hours = course.find("span", class_="card-hours")
-        title = course.find("h5", class_="card-title")
-        pricing = course.find("p", class_="card-price").find("b")
-
-        if pricing.find("span"):
-            pricing.find("span").decompose()
-
-        
-        course_page = self.session.get(course['href'])
-        course_soup = BeautifulSoup(
-            course_page.content, "html.parser")
-        course_title = course_soup.find("h1").text
-        course_info = course_soup.find("div", class_="row information-boxes mb-4")
-        created_date = course_info.find_all("div", class_="true-center").pop(-1).find("p").text
-        created_by = course_soup.find("div", class_="content-about position-relative").find("h5").text
-        
-        course_dict = {
-            "title": course_title,
-            "period": hours.text.strip(),
-            "link": course['href'],
-            "price": pricing.text.strip(),
-            "category": tuple(category_list),
-            "created date": created_date,
-            "created by": created_by
-        }
-        return course_dict
 
     def _get_courses_from_learncafe(self, search_tags):
         all_results = []
@@ -175,7 +179,8 @@ class Webscraper:
 
             for future in concurrent.futures.as_completed(futures):
                 course_dict = future.result()
-                all_results.append(course_dict)
+                if course_dict != {}:
+                    all_results.append(course_dict)
         
         self.shared_result.extend(all_results)
         
@@ -190,7 +195,6 @@ class Webscraper:
         course_link = course.find("a", class_="browse-search-results-item-link")["href"]
         
         self.driver.get(course_link)
-
         wait = WebDriverWait(self.driver, self.TIMEOUT)
         try:
             wait.until(EC.presence_of_element_located((By.XPATH, "//h2[text()='Course info']")))
@@ -216,12 +220,11 @@ class Webscraper:
             "period": period,
             "link": course_link,
             "price": price_info,
-            "category": tuple([search_tag.replace("+", " ").title()]), # Unir em caso de resultados repetidos
+            "category": tuple([search_tag.replace("+", " ").title()]),
             "created date": created_date,
             "created by": created_by
         }
         
-
         return course_dict
         
         
@@ -233,7 +236,7 @@ class Webscraper:
             wait = WebDriverWait(self.driver, 10)
             try:
                 wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "browse-search-results-item")))
-            except TimeoutException:
+            except TimeoutException: # TODO: Gerar arquivos de logs para todos os timeouts, assim como opções de reexecutar só as partes deles para adicionar ao selenium_results?
                 break
             
             while True:
@@ -263,9 +266,7 @@ class Webscraper:
                 except TimeoutException:
                     print("TimeoutException trocando de página")        
         
-        self.utils.save_pluralsight_results(all_results)
-        
-            
+        self.utils.save_pluralsight_results(all_results) # Externalizar em um método?
         
 
     # TODO -> now we have two functions for each step of the system processing but I think we can use one for both sites
@@ -286,14 +287,12 @@ class Webscraper:
         options = Options()
         options.headless = True
         self.driver = webdriver.Firefox(options=options)
-        self.session = requests.Session()
-        
         self._get_courses_from_pluralsight(search_tags) # Não consegui com pool
-        
-        self.session.close()
         self.driver.quit()
         
             
-
-    def get_results(self):
+    def get_results(self): # Só dos de requests
         return self.utils.save_results(list(self.shared_result))
+
+    def concatenate_results(self):
+        self.utils.concatenate_outputs("requests_results", "selenium_results")
